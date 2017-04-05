@@ -24,7 +24,7 @@ for subj in subj_list:
     for cond in cond_list:
         # set path and output filename
         data_path=op.join(root_dir, subj, cond) 
-        res_fname = cond + 'nii.gz'
+        res_fname = cond + '.nii.gz'
         res_path = op.join(res_dir, subj, res_fname)
         os.chdir(data_path)
         # list all nii files we want
